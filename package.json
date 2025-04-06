@@ -1,11 +1,19 @@
 {
   "name": "longmo-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "cli template",
+  "types": "modules",
   "main": "index.js",
   "scripts": {
-   },
+    "prepare": "husky",
+    "lint": "eslint ."
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "longmo",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "eslint": "9.24.0",
+    "longmo-lint-configs": "1.0.7-beta.4"
+  }
 }
