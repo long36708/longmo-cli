@@ -12,8 +12,9 @@
   "author": "longmo",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^9.1.7",
     "eslint": "9.24.0",
-    "longmo-lint-configs": "1.0.7-beta.4"
+    "husky": "^9.1.7",
+    "longmo-lint-configs": "1.0.7-beta.4",
+    "vitest": "^3.1.1"
   }
 }

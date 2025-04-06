@@ -4,18 +4,18 @@ import {program} from 'commander'
 /**
  * @Author: longmo
  * @Date: 2025-04-06 11:44:59
- * @LastEditTime: 2025-04-06 11:51:38
+ * @LastEditTime: 2025-04-06 16:48:33
  * @FilePath: packages/cli/lib/createCli.js
  * @Description:
  */
 import {log} from '@longmo-cli/utils'
 import path from 'node:path'
+import semver from "semver";
 
-const dirname1 = dirname;
-const __dirname = dirname1(import.meta);
+const __dirname = dirname(import.meta);
 const pkgPath = path.resolve(__dirname, '../package.json');
 const pkg = fse.readJsonSync(pkgPath);
-const LOWEST_NODE_VERSION = 21
+const LOWEST_NODE_VERSION = '22.0.0'
 
 function checkNodeVersion() {
     log.verbose('node version', process.version)
@@ -38,7 +38,7 @@ export function createCli() {
         .name(Object.keys(pkg.bin)[0])
         .usage('<command> [options]')
         .version(pkg.version)
-        .option('-d, --debug', '是否开启调试模式', false)
+        .option('-d, --debug', '是否开启调试模式', true)
         .hook('preAction', preAction);
 
     program.on('option:debug', function () {

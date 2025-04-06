@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "lib/index.js",
   "bin": {
     "longmo-cli": "./bin/cli.js"
   },
@@ -20,7 +20,7 @@
     "@longmo-cli/init": "workspace:",
     "@longmo-cli/utils": "workspace:",
     "chalk": "^5.4.1",
-    "commander": "^13.1.0",
+    "commander": "^9.4.0",
     "dirname-filename-esm": "^1.1.2",
     "fs-extra": "^11.3.0",
     "import-local": "^3.2.0",

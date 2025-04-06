@@ -7,9 +7,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [],
   "author": "longmo",
   "dependencies": {
-    "@longmo-cli/command": "workspace:"
+    "@longmo-cli/command": "workspace:",
+    "@longmo-cli/utils": "workspace:"
   }
 }

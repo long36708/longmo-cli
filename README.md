@@ -9,3 +9,7 @@ pnpm add --save-dev husky -w
 
 pnpm exec husky init
 ```
+
+```shell
+pnpm add -D vitest -w
+```

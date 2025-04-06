@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import importLocal from 'import-local'
 import {log} from '@longmo-cli/utils'
 import {entry} from '../lib/index.js'
