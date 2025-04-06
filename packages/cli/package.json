@@ -1,0 +1,31 @@
+{
+  "name": "@longmo-cli/starter",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "longmo-cli": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@longmo-cli/init": "workspace:",
+    "@longmo-cli/utils": "workspace:",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "dirname-filename-esm": "^1.1.2",
+    "execa": "^9.5.2",
+    "fs-extra": "^11.3.0",
+    "import-local": "^3.2.0",
+    "semver": "^7.7.1"
+  }
+}
